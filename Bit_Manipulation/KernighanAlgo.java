@@ -9,7 +9,13 @@ public class KernighanAlgo {
         return mask;
     }
 
+    // Alternate but the same only
+    public static int findRsvMaskAlternate(int n){
+        return(n & (-n));
+    }
+
     public static void main(String[] args) {
         System.out.println(findRsvMask(10));
+        System.out.println(findRsvMaskAlternate(10));
     }
 }
