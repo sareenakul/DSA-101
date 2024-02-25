@@ -3,6 +3,7 @@ package Bit_Manipulation;
 // Return the mask that finds the right most significant Bit. 
 // Initiating the mask from 1 and then keep shifting left until the & operator does not give a 1.
 public class RightMostSignificantBitMask {
+    // Time Complexity O(31)
     public static int returnMask(int input){
         int mask = 1;
         for(int i = 0; i < 31; i++){
