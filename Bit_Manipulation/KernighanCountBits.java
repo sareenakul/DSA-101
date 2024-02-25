@@ -1,6 +1,6 @@
 package Bit_Manipulation;
 
-//Time Complexity O(32) and OMEGA(32).
+//Time Complexity O(32) and OMEGA(32). BrutForce Way
 public class KernighanCountBits {
     public static int countBit(int input){
         int count = 0;
@@ -14,7 +14,7 @@ public class KernighanCountBits {
         }
         return count;
     }
-    // Time Complexity O(32) and OMEGA(1)
+    // Time Complexity O(32) and OMEGA(1) Using Kernighan's Algorithm
     public static int countBitKernighan(int input){
         int count = 0;
         while(input != 0){
