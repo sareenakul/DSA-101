@@ -1,6 +1,6 @@
 package BinarySearch;
 public class BinSearch {
-    // Normal Binary Search with Time Complexity O(log(n))
+    // Normal Binary Search with Time Complexity O(log(n)) and Space Complexity of O(1)
     public static int search(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
@@ -20,6 +20,7 @@ public class BinSearch {
         return -1;
     }
 
+    // Normal Binary Search with Time Complexity O(2log(n)) and Space Complexity O(log(n))
     public static int recursiveBS(int[] nums, int target, int start, int end){
         if(end >= start){
            int mid = (end - start)/2 + start;
@@ -46,3 +47,5 @@ public class BinSearch {
         System.out.println(index2);
     }
 }
+
+// https://leetcode.com/problems/binary-search/
