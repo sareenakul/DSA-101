@@ -37,6 +37,31 @@ public class Node {
         return head;
     }
 
+    public static Node modifyAdd(int toBeComparedX, int toBeAddedY, Node head){
+        Node current = head;
+        Node y = new Node(toBeAddedY);
+        Node temp;
+
+        while(current.next.data != toBeComparedX){
+            current = current.next;
+        }
+        temp = current.next.next;
+        current.next = y;
+        y.next = temp;
+        return head;
+
+    }
+
+    public static int getMiddle(Node head){
+        Node slow = head;
+        Node fast = head;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow.data;
+    }
+
     public static void main(String[] args) {
         Node demo = new Node(2);
         demo.next = new Node(3);
